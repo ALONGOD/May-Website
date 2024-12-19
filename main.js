@@ -17,11 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Autoplay was prevented:', error);
         });
         // Remove event listeners after the music starts playing
-        window.removeEventListener('scroll', playMusic);
-        window.removeEventListener('click', playMusic);
+        window.removeEventListener('scroll', handleInteraction);
+        window.removeEventListener('click', handleInteraction);
+    }
+
+    function handleInteraction() {
+        setTimeout(playMusic, 2000);
+        // Clear the timeout to prevent double play
+        clearTimeout(autoPlayTimeout);
     }
 
     // Add event listeners for scroll and click
-    window.addEventListener('scroll', playMusic);
-    window.addEventListener('click', playMusic);
+    window.addEventListener('scroll', handleInteraction);
+    window.addEventListener('click', handleInteraction);
+
+    // Auto-play music after 10 seconds if no interaction
+    const autoPlayTimeout = setTimeout(playMusic, 10000);
 });
