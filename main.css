@@ -1,5 +1,5 @@
 body {
-    background: url('lol/img/high-resolution-premium-quality-image-of-a-rough-light-pink-texture_9970421.jpg!sw800') no-repeat center center fixed;
+    background: linear-gradient(to top, #ff9a9e, #fecfef);
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -68,10 +68,12 @@ h1 {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .gallery img {
         width: 100px;
         height: 100px;
     }
+
     .letter {
         font-size: 0.8em;
         width: 90%;
@@ -88,6 +90,7 @@ h1 {
         width: 80px;
         height: 80px;
     }
+
     .letter {
         font-size: 0.7em;
         width: 95%;
