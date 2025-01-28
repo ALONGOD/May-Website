@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@0;1&display=swap');
+
 body {
+    font-family: 'Playfair Display', serif;
     background: linear-gradient(to top, #ff9a9e, #fecfef);
     background-size: cover;
     font-family: Arial, sans-serif;
@@ -10,6 +13,7 @@ body {
 }
 
 header {
+    font-family: 'Great Vibes', cursive;
     text-decoration: underline;
     text-align: center;
     margin: 20px 0;
@@ -48,6 +52,7 @@ h1 {
 }
 
 .letter {
+    font-family: 'Playfair Display', serif;
     font-size: 1em;
     max-width: 600px;
     padding: 20px;
